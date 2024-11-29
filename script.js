@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     function getInput() {
         if (inputBox.value === "") {
-            alert("Enter something");
+            alert("Enter an Item");
         }else{
             let li = document.createElement("li");
             let b = document.createElement("b");
