@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.To-do-app-container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0.25turn, #3f87a6, #f69d3c);
+    padding-top: 150px;
+    
+}
+.To-do-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin-inline: auto;
+    padding: 12px;
+    border-radius: 10px;
+}
+.item-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+#inputbox{
+    flex: 1;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 11px;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+}
+
+.To-do-app div button{
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    padding:8px 30px ;
+    color: #fff;
+    background-color: #f69d3c;
+    border: none;
+    outline: none;
+}
+
+.list-content{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+ul li{
+    list-style: none;
+    padding-bottom: 8px;
+    font-size: 18px;
+    
+    position: relative;
+}
+ul li b{
+    cursor: pointer;
+    font-size: 20px;
+}
+ul li b::before{
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    left: -5.5%;
+    top: 10%;
+}
+
+ul li b.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+ul li b.checked::before{
+    content: '\f00c';
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    font-weight: 2rem;
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #5bcd3e;
+    cursor: pointer;
+}
+
+ul li span{
+    position: absolute;
+    right: 8%;
+    bottom: 5px;
+    height: 23px;
+    width: 23px;
+    font-size: 23px;
+    line-height: 23px;
+    text-align:center ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ul li span:hover{
+    background-color: #edeef0;
+    
+}
